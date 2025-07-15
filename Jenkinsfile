@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'webapp'
-        DOCKER_REPO = 'your-dockerhub-username'
+        DOCKER_REPO = 'rajeshgramam/jenkins_learn'
         IMAGE_TAG = 'latest'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://your-repo-url/webapp.git'
+                git 'https://github.com/Rajesh-Rajan-TF/jenkins-learn.git'
             }
         }
 
